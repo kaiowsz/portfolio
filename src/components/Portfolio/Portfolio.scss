@@ -1,0 +1,100 @@
+.portfolio {
+    background: linear-gradient(180deg, black, rgb(27, 27, 27), );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+.content-portfolio {
+    width: 70%;
+    margin: auto;
+    .title-portfolio {
+        h1 {
+            font-size: 40px;
+            color: white;
+            border-bottom: 1px solid gray;
+            width: fit-content;
+            margin-bottom: 30px;
+        }
+        p {
+            color: white;
+            margin-bottom: 100px;
+        }
+    }
+
+    .works-portfolio {
+
+        
+        gap: 30px;
+        justify-content: center;
+
+        .project {
+            width: 350px;
+            overflow: hidden;
+            border: 1px solid rgb(168, 168, 168);
+            color: white;
+            border-radius: 10px;
+            background-color: transparent;
+            box-shadow: 2px 2px 10px -5px rgb(168, 168, 168) ;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            h2 {
+                font-size: 16px;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            p {
+                margin: 0 15px;
+                font-size: 15px;
+                text-align: center;
+                height: 60px;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 10px;
+                
+                a {
+                    border-radius: 10px;
+                    border: 1px solid rgb(168, 168, 168);
+                    padding: 15px 40px;
+                    margin: 10px;
+                    text-decoration: none;
+                    color: white;
+                    transition: all .5s;
+                }
+                a:hover {
+                    transform: scale(1.05);
+                    background-color: rgb(3, 2, 2);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .content-portfolio {
+        width: 90%;
+    }
+
+    .works-portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        
+        place-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .works-portfolio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
