@@ -1,5 +1,5 @@
 .portfolio {
-    background: linear-gradient(180deg, black, rgb(27, 27, 27), );
+    background: linear-gradient(180deg, #001b35,#233247);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@
         .project {
             width: 350px;
             overflow: hidden;
-            border: 1px solid rgb(168, 168, 168);
+            border: 1px solid rgb(85, 85, 85);
             color: white;
             border-radius: 10px;
             background-color: transparent;
@@ -48,16 +48,58 @@
             }
 
             h2 {
-                font-size: 16px;
+                font-size: 18px;
                 text-align: center;
                 margin: 10px 0;
+                width: fit-content;
+                margin: 15px auto;
+                border-bottom: 1px solid rgb(146, 146, 146);
             }
 
             p {
                 margin: 0 15px;
                 font-size: 15px;
                 text-align: center;
-                height: 60px;
+                height: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 22px;
+            }
+
+            .stack {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 95%;
+                margin: auto;
+
+                h2 {
+                    border-bottom: 1px solid rgb(141, 141, 141);
+                }
+            }
+
+            .stacks {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                height: 100px;
+
+                span {
+                    background-color: rgb(6, 15, 34);
+                    font-size: 0.9rem;
+                    padding: 8px 12px;
+                    border-radius: 6px;
+                    transition: all .5s;
+                    height: fit-content;
+                    user-select: none;
+                }
+                span:hover {
+                    scale: 1.1;
+                }
             }
 
             .buttons {
@@ -67,7 +109,7 @@
                 
                 a {
                     border-radius: 10px;
-                    border: 1px solid rgb(168, 168, 168);
+                    border: 1px solid rgb(85, 85, 85);
                     padding: 15px 40px;
                     margin: 10px;
                     text-decoration: none;
@@ -76,7 +118,7 @@
                 }
                 a:hover {
                     transform: scale(1.05);
-                    background-color: rgb(3, 2, 2);
+                    background-color: rgb(13, 20, 34);
                 }
             }
         }
